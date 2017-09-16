@@ -8,6 +8,13 @@
 - polynomial
 numpyを使った多項式計算
 
+- series-parallel_graph
+直並列グラフについて、線形時間で漏えい確率を求める
+CSS2017
+
+- DrawGraph
+pygraphvizを用いてグラフを描画する
+
 
 ## GitHubにデータをプッシュするまでの流れw
 - ファイルをローカルリポジトリに登録する
