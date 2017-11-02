@@ -25,7 +25,7 @@ piccnt = 0
 
 # reliability probability
 # OpeCount = input("Operation times : ")
-OpeCount = 30
+OpeCount = 300
 
 def main():
 	G = [[1],[0]]
@@ -415,13 +415,15 @@ def drawGraph_polynomial(G, Elis, s, t):
 	n.attr['label'] = 't'
 
 	Graph.layout()
-	# ローカルに保存しておく
-	Graph.draw("graph%04s.png" % piccnt, prog = "neato")
+	# ローカルに保存しておく Image直下
+	Graph.draw("Image/graph%03d.png" % piccnt, prog = "neato")
 	piccnt += 1
-	Graph.draw("graph.png", prog="neato")
 
-	im = Image.open("./graph.png")
-	im.show()
+	# グラフを描画する
+	# Graph.draw("graph.png", prog="neato")
+	# im = Image.open("./graph.png")
+	# im.show()
+	
 	return
 
 	
